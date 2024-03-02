@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "products",
     "categories",
+
+    # admin panel security settings
+    'admin_honeypot',
 ]
 
 MIDDLEWARE = [

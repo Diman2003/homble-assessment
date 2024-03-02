@@ -6,7 +6,7 @@ from products.admin import ProductInline
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ("id", "name", "is_active")
+    list_display = ("id", "name", "count_products", "is_active")
     ordering = ("id",)
     search_fields = ("name",)
     list_filter = ("is_active",)

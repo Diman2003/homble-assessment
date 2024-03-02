@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "96a5770e-d007-4549-8941-5f0596d925c7",
+		"name": "Homble Backend Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25323490",
+		"_collection_link": "https://red-star-387536.postman.co/workspace/New-Team-Workspace~ff537166-0a69-4aeb-bf22-720626ca7506/collection/25323490-96a5770e-d007-4549-8941-5f0596d925c7?action=share&source=collection_link&creator=25323490"
+	},
+	"item": [
+		{
+			"name": "Products list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/products/?refrigerated=false",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "refrigerated",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories-with-products/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8000/categories/categories-with-products/"
+			},
+			"response": []
+		},
+		{
+			"name": "active-categories-with-sku-count/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8000/products/active-categories-with-sku-count/"
+			},
+			"response": []
+		},
+		{
+			"name": "all-skus-with-category/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8000/products/all-skus-with-category/"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": {
+			"headerPrefix": "Token",
+			"addTokenTo": "header"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "staff-token",
+			"value": "1a66627570137de385c36dfe5cc23ea6ae1accc2",
+			"type": "string"
+		},
+		{
+			"key": "customer-token",
+			"value": "32e6bc7f3de1ee132e5c7f151d56ce0d9267a829",
+			"type": "string"
+		}
+	]
+}
